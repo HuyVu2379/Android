@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text, Image, FlatList, TouchableOpacity, StyleSheet,SafeAreaView, Pressable } from 'react-native';
+import { View, Text, Image, FlatList, TouchableOpacity, StyleSheet, SafeAreaView, Pressable } from 'react-native';
 
 const bikes = [
-  { id: 1, name: 'Pinarello', price: '$1800', image: require('./components/bike1.png') },
-  { id: 2, name: 'Pina Mountai', price: '$1700', image: require('./components/bike2.png') },
-  { id: 3, name: 'Pina Bike', price: '$1500', image: require('./components/bike3.png') },
-  { id: 4, name: 'Pinarello', price: '$1900', image: require('./components/bike4.png') },
-  { id: 5, name: 'Pinarello', price: '$2700', image: require('./components/bike5.png') },
-  { id: 6, name: 'Pinarello', price: '$1350', image: require('./components/bike6.png') },
+  { id: 1, name: 'Pinarello', price: '$1800', image: require('./assets/bike1.png') },
+  { id: 2, name: 'Pina Mountai', price: '$1700', image: require('./assets/bike2.png') },
+  { id: 3, name: 'Pina Bike', price: '$1500', image: require('./assets/bike3.png') },
+  { id: 4, name: 'Pinarello', price: '$1900', image: require('./assets/bike4.png') },
+  { id: 5, name: 'Pinarello', price: '$2700', image: require('./assets/bike5.png') },
+  { id: 6, name: 'Pinarello', price: '$1350', image: require('./assets/bike6.png') },
 ];
 
 const BikeApp = () => {
@@ -41,9 +41,9 @@ const BikeApp = () => {
         contentContainerStyle={styles.listContainer}
       />
       <TouchableOpacity style={styles.buttonAdd}>
-      <Pressable>
-      <Text style={{color:'white',fontSize:20,fontWeight:'bold'}}>Add</Text>
-      </Pressable>
+        <Pressable>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Add</Text>
+        </Pressable>
       </TouchableOpacity>
     </SafeAreaView>
   );
@@ -111,13 +111,13 @@ const styles = StyleSheet.create({
     color: '#FFA000',
     textAlign: 'center',
   },
-  buttonAdd:{
-    borderWidth:1,
-    borderColor:'red',
+  buttonAdd: {
+    borderWidth: 1,
+    borderColor: 'red',
     padding: 10,
-    justifyContent:'center',
-alignItems:'center',
-backgroundColor:'green'
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'green'
   }
 });
 
